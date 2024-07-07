@@ -1,0 +1,10 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+BAT1,JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,1,B-,
+"D_0, D_1, D_10, D_11, D_12, D_13, D_14, D_15, D_16, D_17, D_18, D_19, D_2, D_20, D_21, D_22, D_23, D_24, D_25, D_26, D_27, D_28, D_29, D_3, D_30, D_31, D_32, D_33, D_34, D_4, D_5, D_6, D_7, D_8, D_9",Diode_DO-35,35,D,
+"K_0, K_1, K_10, K_11, K_12, K_13, K_14, K_15, K_16, K_17, K_18, K_19, K_2, K_20, K_22, K_23, K_24, K_25, K_26, K_27, K_28, K_3, K_31, K_32, K_33, K_34, K_37, K_4, K_5, K_7, K_8, K_9",Choc-MX-19mm-1u,32,KEYSW,
+"K_21, K_29, K_30, K_36, K_39, K_6",Choc-MX-19mm-1.5u,6,KEYSW,
+"K_35, K_38",Choc-MX-19mm-2u,2,KEYSW,
+K_40,Choc-MX-19mm-2.25u,1,KEYSW,
+K_41,Choc-MX-19mm-1.75u,1,KEYSW,
+"PWR1, RST1",JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,2,SW_SPST,
+U1,nice_nano_no_mid,1,nice_nano,
