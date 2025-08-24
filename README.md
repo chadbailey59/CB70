@@ -18,6 +18,12 @@ Why CB70? It's my initials, and it used to be a 70-key layout. When I deleted a 
 - OnShape docs for three different cases: [MX](https://cad.onshape.com/documents/61077a70c0807a2f741d218a/w/b756240a5bc81a242d3100ae/e/06f8d761157dde9586b0a508), [Choc](https://cad.onshape.com/documents/518ea40d790487622d23318b/w/b5c85f466e1f1d2c95445d69/e/3acfa7d78165eaa4fb25c29e), and [Choc Slim](https://cad.onshape.com/documents/839a1d1e7ccef3f6cb852ad6/w/885d6dd90bac1c92721256f6/e/4149e8558c641b31c0ba8e37)
 - STL files for the 3 different case styles in `/Case`
 
+### Update 2025-08-24: The Dongle Variant
+
+ZMK recently added support for [dongles!](https://zmk.dev/docs/development/hardware-integration/dongle) There are now two versions of the firmware and ZMK source. The `non-dongle` folder is the traditional CB70, with two nice!nanos—one for the left half, one for the right. The `dongle` version actually requires _three_ nice!nanos (or whatever boards you're using): Two for the left and right halves, and one for the 'dongle'.
+
+The main benefit of the dongle version (for me) is that it's easier to switch the whole keyboard to another computer by just plugging in the dongle.
+
 ## The Philosophy
 
 The key layout is based around something I've been honing for almost five years now. I've tried a few different ortho/ergo layouts, but contrary to what the internet says, they always slow me down way too much. Meanwhile, I use this at my desk, I still use my MacBook Pro's built-in keyboard a lot, and I average 110-120 WPM on both.
