@@ -1,0 +1,12 @@
+file_format: "1"
+id: cb70s
+name: CB70S
+type: shield
+url: https://github.com/chadbailey59/zmk-config
+requires:
+  - pro_micro
+features:
+  - keys
+siblings:
+  - cb70s_left
+  - cb70s_right

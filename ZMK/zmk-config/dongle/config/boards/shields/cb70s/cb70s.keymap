@@ -1,0 +1,52 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
+
+#define DEFAULT 0
+
+
+#define CMDR(usage) &ch LG(usage) usage
+#define OPTR(usage) &ch LA(usage) usage
+
+
+
+/ {
+	behaviors {
+		ch: cmd_hold {
+			compatible = "zmk,behavior-hold-tap";
+			label = "CMD_HOLD";
+			#binding-cells = <2>;
+			tapping-term-ms = <200>;
+			quick_tap_ms = <0>;
+			flavor = "tap-preferred";
+			bindings = <&kp>, <&kp>;
+		};
+		hm: homerow_mods {
+			compatible = "zmk,behavior-hold-tap";
+			label = "HOMEROW_MODS";
+			#binding-cells = <2>;
+			tapping-term-ms = <150>;
+			quick-tap-ms = <0>;
+			flavor = "tap-preferred";
+			bindings = <&kp>, <&kp>;
+		};
+	};
+	
+	keymap {
+		compatible = "zmk,keymap";
+		default_layer {
+
+			bindings = <
+			&kp ESC   &kp GRAVE   &kp N1     &kp N2   &kp N3    &kp N4    &kp N5      &kp N6          &kp OUT  &kp N7     &kp N8   &kp N9     &kp N0    &kp MINUS  &kp EQUAL  &kp BSPC
+			&kp DEL   &kp TAB     &kp Q      &kp W    &kp E     &kp R     &kp T       &kp OUT         &kp Y    &kp U      &kp I    &kp O      &kp P     &kp LBKT   &kp RBKT   &kp BSLH
+			&kp PGUP  &kp CAPS    &kp A      &kp S    &kp D     &kp F     &kp G       &kp OUT         &kp H    &kp J      &kp K    &kp L      &kp SEMI  &kp SQT    &kp OUT    &kp RET
+			&kp PGDN  &kp LSHIFT  &kp OUT    &kp Z    &kp X     &kp C     &kp V       &kp B           &kp OUT  &kp N      &kp M    &kp COMMA  &kp DOT   &kp FSLH   &kp UP     &kp RSHIFT
+			&kp OUT   &kp RCTRL   &kp LCTRL  &kp OUT  &kp LALT  &kp LGUI  &kp LSHIFT  &kp OUT         &kp OUT  &kp SPACE  &kp OUT  &kp RGUI   &out OUT_BLE  &kp LEFT   &kp DOWN   &kp RIGHT  
+			>;
+		};	
+	};
+};
+
+
+
+
